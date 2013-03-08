@@ -35,3 +35,6 @@
     width: 220px;
     /* margin-left: 15px; */
 }
+.logo {
+    background-image: url('../img/bsport.jpg');
+}

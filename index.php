@@ -67,6 +67,38 @@ function getProductsHtml() {
         <link href="css/custom.css" type="text/css" rel="stylesheet">
     </head>
     <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#" name="top"><span class="logo"></span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#"><i class="icon-home"></i> Inicio</a></li>
+                            <li class="divider-vertical"></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li><a href="/signup">Registrarse</a></li>
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Ingresar <strong class="caret"></strong></a>
+                                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                                    <form method="post" action="login" accept-charset="UTF-8">
+                                        <input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+                                        <input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+                                        <input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Entrar">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
         <div class="main">
             <div class="row">
                 <?php echo getProductsHtml(); ?>
@@ -96,27 +128,81 @@ function getProductsHtml() {
                 -->
             </div>
         </div>
-        <div id="form_contacto">
+        <div id="dg-form_contacto" style="display: none;">
+            <form id="form_contacto" class="well span8">
+                <div class="row">
+                    <div class="span3">
+                        <div class="controls">
+                            <div class="control-group">
+                                <div class="input-prepend">
+                                    <label for="usuario">Usuario: </label>
+                                    <span class="add-on"><i class="icon-user"></i></span>
+                                    <input type="text" id="usuario" name="usuario">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="input-prepend">
+                                    <label for="email">E-Mail: </label>
+                                    <span class="add-on"><i class="icon-envelope"></i></span>
+                                    <input type="text" id="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="control-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="input-xlarge span5" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/generales.js"></script>
+
     <script type="text/javascript">
         $(function() {
-            $("#form_contacto").dialog({
-                width: 960,
-                hide: 'slide',
-                autoOpen: false
+            $('.dropdown-menu').find('form').click(function(e) {
+                e.stopPropagation();
             });
-
             $('a.contactar').click(function() {
-                //var url = $(this).attr('href');
-                var url = "http://www.google.com";
-                $('#form_contacto').load(url, function() {
-                    $('#form_contacto').dialog('open');
+                $("#dg-form_contacto").dialog({
+                    width: 730,
+                    buttons: {
+                        "Enviar": function() {
+                            var vFromName = true;
+                            var vFrom = true;
+                            var vMensaje = true;
+
+                            if (empty($("#usuario").val())) {
+                                vFromName = vFromName && false;
+                            }
+
+                            if (emailValido($("#email"), "email")) {
+                                vFrom = vFrom && false;
+                            }
+
+                            if (empty($("#mensaje").val())) {
+                                vMensaje = vMensaje && false;
+                            }
+
+                            if (vFromName && vFrom && vMensaje) {
+                                $.ajax({
+                                });
+                            }
+                        }
+                    },
+                    close: function() {
+                        $("#usuario").val("");
+                        $("#email").val("");
+                        $("#mensaje").val("");
+                    }
                 });
-                return false;
+                //$('#dg-form_contacto').dialog('open');
             });
         });
     </script>
