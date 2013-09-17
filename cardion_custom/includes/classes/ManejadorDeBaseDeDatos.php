@@ -23,7 +23,7 @@ class ManejadorDeBaseDeDatos {
             return $this->connection;
         }
         
-        $this->setearDatosDeConexion($hostCon, $usuarioCon, $passwordCon, $baseDeDatosCon, $encodingCon, $driverCon);
+        $this->setearDatosDeConexion($hostCon, $usuarioCon, $passwordCon, $baseDeDatosCon, $encodingCon);
         $this->conectarAlMotor();
         
         return $this->connection;
@@ -31,14 +31,6 @@ class ManejadorDeBaseDeDatos {
 
     protected function conectarAlMotor() {
         throwException(new Exception());
-    }
-            case "postgresql":
-                $this->connection = pg_connect("host={$this->host} port=5432 dbname={$this->database} user={$this->user} password={$this->password}");
-                pg_set_client_encoding($this->connection, "UNICODE");
-                break;
-            default:
-                break;
-        }
     }
 
     public static function obtenerResultadosConsulta($sql_query) {
@@ -51,23 +43,7 @@ class ManejadorDeBaseDeDatos {
         return $query_escapeada;
     }
     protected function ejectuarConsulta($sql_query) {
-        switch ($this->driver) {
-            case "mysql":
-                $query_result = @mysqli_real_query($this->connection, $sql_query);
-                
-                break;
-            case "odbc":
-                $query_result = @odbc_exec($this->connection, $sql_query);
-                break;
-            case "mssql":
-                $query_result = @mssql_query($sql_query, $this->connection);
-                break;
-            case "postgresql":
-                $query_result = pg_query($this->connection, $sql_query);
-                break;
-            default:
-                break;
-        }
+        throwException(new Exception());
     }
 
 }
