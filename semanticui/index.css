@@ -1,0 +1,10 @@
+#caratula {
+    width: 50%; 
+    margin: auto;
+}
+#boton-nuevo-punto {
+    float: right;
+}
+#caratula-datos-tabla th, #caratula-datos-tabla td {
+    text-align: center;
+}
