@@ -18,11 +18,11 @@
     <li class="dropdown">
         <a href="#" class="dropdown-toggle <?if($activo=='about'){echo 'active-link';}?>" data-toggle="dropdown">About<b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="our_works.html">Our works</a></li>
-            <li><a href="patnerships.html">Parnerships</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a href="our_works.php">Our works</a></li>
+            <li><a href="patnerships.php">Parnerships</a></li>
+            <li><a href="leadership.php">Leadership</a></li>
+            <li><a href="news.php">News</a></li>
+            <li><a href="events.php">Events</a></li>
             <li><a href="blog.php">Blog</a></li>
         </ul>
     </li>
