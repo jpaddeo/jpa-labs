@@ -1,6 +1,6 @@
 <ul class="nav pull-right">
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products and Services<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle <?if($activo=='products&services'){echo 'active-link';}?>" data-toggle="dropdown">Products and Services<b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li class="nav-header">PRODUCTS</li>
             <li><a href="product.html">Product1</a></li>
@@ -16,14 +16,14 @@
         </ul>                  
     </li>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle <?if($activo=='about'){echo 'active-link';}?>" data-toggle="dropdown">About<b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li><a href="our_works.html">Our works</a></li>
             <li><a href="patnerships.html">Parnerships</a></li>
             <li><a href="leadership.html">Leadership</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.php">Blog</a></li>
         </ul>
     </li>
     <li><a href="faq.php" <?if($activo=='faq'){echo 'class="active-link"';}?>>Preguntas Frecuentes</a></li>
