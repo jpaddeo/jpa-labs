@@ -26,8 +26,8 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </li>
-    <li><a href="faq.php" <?if($activo=='faq'){echo 'class="active-link"';}?>>FAQ</a></li>
-    <li><a href="contact_us.php" <?if($activo=='contact_us'){echo 'class="active-link"';}?>>Contact us</a></li>
-    <li><a href="signup.php" <?if($activo=='signup'){echo 'class="active-link"';}?>>Sign up</a></li>
-    <li><a href="signin.php" <?if($activo=='signin'){echo 'class="active-link"';}?>>Sign in</a></li>
+    <li><a href="faq.php" <?if($activo=='faq'){echo 'class="active-link"';}?>>Preguntas Frecuentes</a></li>
+    <li><a href="contact_us.php" <?if($activo=='contact_us'){echo 'class="active-link"';}?>>Contactame</a></li>
+    <li><a href="signup.php" <?if($activo=='signup'){echo 'class="active-link"';}?>>Login</a></li>
+    <li><a href="signin.php" <?if($activo=='signin'){echo 'class="active-link"';}?>>Registrarse</a></li>
 </ul>
