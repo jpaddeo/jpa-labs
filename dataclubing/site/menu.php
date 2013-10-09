@@ -1,28 +1,24 @@
 <ul class="nav pull-right">
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle <?if($activo=='products&services'){echo 'active-link';}?>" data-toggle="dropdown">Products and Services<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle <?if($activo=='products&services'){echo 'active-link';}?>" data-toggle="dropdown">Productos y Servicios<b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li class="nav-header">PRODUCTS</li>
-            <li><a href="product.php">Product1</a></li>
-            <li><a href="product.php">Product2</a></li>
-            <li><a href="product.php">Product3</a></li>
-            <li><a href="all_products.php">All products</a></li>             
+            <li class="nav-header">PRODUCTOS</li>
+            <li><a href="product.php">Producto 1</a></li>
+            <li><a href="all_products.php">Todos los productos</a></li>             
             <li class="divider"></li>
-            <li class="nav-header">SERVICES</li>
-            <li><a href="service.php">Service1</a></li>
-            <li><a href="service.php">Service2</a></li>
-            <li><a href="service.php">Service3</a></li>
-            <li><a href="all_services.php">All services</a></li>
+            <li class="nav-header">SERVICIOS</li>
+            <li><a href="service.php">Servicio 1</a></li>
+            <li><a href="all_services.php">Todos los servicios</a></li>
         </ul>                  
     </li>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle <?if($activo=='about'){echo 'active-link';}?>" data-toggle="dropdown">About<b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle <?if($activo=='about'){echo 'active-link';}?>" data-toggle="dropdown">Acerca<b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="our_works.php">Our works</a></li>
+            <li><a href="our_works.php">Nuestro Trabajos</a></li>
             <li><a href="patnerships.php">Parnerships</a></li>
             <li><a href="leadership.php">Leadership</a></li>
-            <li><a href="news.php">News</a></li>
-            <li><a href="events.php">Events</a></li>
+            <li><a href="news.php">Noticias</a></li>
+            <li><a href="events.php">Eventos</a></li>
             <li><a href="blog.php">Blog</a></li>
         </ul>
     </li>

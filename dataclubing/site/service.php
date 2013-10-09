@@ -1,3 +1,4 @@
+<?php include("inc/config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bootbusiness | Short description about company">
     <meta name="author" content="Your name">
-    <title>Bootbusiness | Give unique title of the page here</title>
+    <title><?php echo TITLE;?></title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap responsive -->
