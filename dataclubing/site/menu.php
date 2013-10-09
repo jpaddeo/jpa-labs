@@ -3,16 +3,16 @@
         <a href="#" class="dropdown-toggle <?if($activo=='products&services'){echo 'active-link';}?>" data-toggle="dropdown">Products and Services<b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li class="nav-header">PRODUCTS</li>
-            <li><a href="product.html">Product1</a></li>
-            <li><a href="product.html">Product2</a></li>
-            <li><a href="product.html">Product3</a></li>
-            <li><a href="all_products.html">All products</a></li>             
+            <li><a href="product.php">Product1</a></li>
+            <li><a href="product.php">Product2</a></li>
+            <li><a href="product.php">Product3</a></li>
+            <li><a href="all_products.php">All products</a></li>             
             <li class="divider"></li>
             <li class="nav-header">SERVICES</li>
-            <li><a href="service.html">Service1</a></li>
-            <li><a href="service.html">Service2</a></li>
-            <li><a href="service.html">Service3</a></li>
-            <li><a href="all_services.html">All services</a></li>
+            <li><a href="service.php">Service1</a></li>
+            <li><a href="service.php">Service2</a></li>
+            <li><a href="service.php">Service3</a></li>
+            <li><a href="all_services.php">All services</a></li>
         </ul>                  
     </li>
     <li class="dropdown">
