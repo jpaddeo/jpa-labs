@@ -23,7 +23,7 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a href="index.html" class="brand brand-bootbus">Bootbusiness</a>
+            <a href="index.php" class="brand brand-bootbus">Bootbusiness</a>
             <!-- Below button used for responsive navigation -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -32,39 +32,10 @@
             </button>
             <!-- Start: Primary navigation -->
             <div class="nav-collapse collapse">        
-              <ul class="nav pull-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products and Services<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-header">PRODUCTS</li>
-                    <li><a href="product.html">Product1</a></li>
-                    <li><a href="product.html">Product2</a></li>
-                    <li><a href="product.html">Product3</a></li>
-                    <li><a href="all_products.html">All products</a></li>             
-                    <li class="divider"></li>
-                    <li class="nav-header">SERVICES</li>
-                    <li><a href="service.html">Service1</a></li>
-                    <li><a href="service.html">Service2</a></li>
-                    <li><a href="service.html">Service3</a></li>
-                    <li><a href="all_services.html">All services</a></li>
-                  </ul>                  
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="our_works.html">Our works</a></li>
-                    <li><a href="patnerships.html">Parnerships</a></li>
-                    <li><a href="leadership.html">Leadership</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                  </ul>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact_us.html" class="active-link">Contact us</a></li>
-                <li><a href="signup.html">Sign up</a></li>
-                <li><a href="signin.html">Sign in</a></li>
-              </ul>
+              <?php 
+              $activo = 'signup';
+              include("menu.php"); 
+              ?>
             </div>
           </div>
         </div>
@@ -76,96 +47,53 @@
     <div class="content">
       <div class="container">
         <div class="page-header">
-          <h1>Contact us</h1>
+          <h1>Signup to Bootbusiness</h1>
         </div>
-        <div class="row-fluid">
-          <!-- Start: CONTACT US FORM -->
-          <div class="span4 offset1">
-            <div class="page-header">
-              <h2>Quick message</h2>
-            </div>
-            <form class="form-contact-us">
-              <div class="control-group">
-                <div class="controls">
-                  <input type="text" id="inputName" placeholder="Name">
-                </div>
+        <div class="row">
+          <div class="span6 offset3">
+            <h4 class="widget-header"><i class="icon-gift"></i> Be a part of Bootbusiness</h4>
+            <div class="widget-body">
+              <div class="center-align">
+                <form class="form-horizontal form-signin-signup">
+                  <input type="text" name="email" placeholder="Email">
+                  <input type="password" name="password" placeholder="Password">
+                  <input type="password" name="password_confirmation" placeholder="Password Confirmation">
+                  <div>
+                    <input type="submit" value="Signup" class="btn btn-primary btn-large">
+                  </div>
+                </form>
+                <h4><i class="icon-question-sign"></i> Already have an account?</h4>
+                <a href="signin.html" class="btn btn-large bottom-space">Signin</a>
+                <h4><i class="icon-thumbs-up"></i> Sign in with third party account</h4>
+                <ul class="signin-with-list">
+                  <li>
+                    <a class="btn-twitter">
+                      <i class="icon-twitter icon-large"></i>
+                      Signin with Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-facebook">
+                      <i class="icon-facebook icon-large"></i>
+                      Signin with Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-google">
+                      <i class="icon-google-plus icon-large"></i>
+                      Signin with Google
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-github">
+                      <i class="icon-github icon-large"></i>
+                      Signin with Github
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="control-group">
-                <div class="controls">
-                  <input type="text" id="inputEmail" placeholder="Email">
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="controls">
-                  <textarea id="inputMessage" placeholder="Message"></textarea>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="controls">
-                  <input type="submit" class="btn btn-primary btn-large" value="Send">
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- End: CONTACT US FORM -->
-          <!-- Start: OFFICES -->
-          <div class="span5 offset1">
-            <div class="page-header">
-              <h2>Offices</h2>
-            </div>
-            <h3>North America</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                USA<br>
-              </address>
-              <div class="pull-right">
-                <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
-                </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <h3>Europe</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                UK<br>
-              </address>
-              <div class="pull-right">
-                <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
-                </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <h3>Asia</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                India<br>
-              </address>
-              <div class="pull-right">
-                <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
-                </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
             </div>
           </div>
-          <!-- End: OFFICES -->
         </div>
       </div>
     </div>
