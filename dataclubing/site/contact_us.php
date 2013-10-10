@@ -16,6 +16,7 @@
     <link href="css/font-awesome-ie7.css" rel="stylesheet">
     <!-- Bootbusiness theme -->
     <link href="css/boot-business.css" rel="stylesheet">
+    <link href="css/tipsy.css" rel="stylesheet">
   </head>
   <body>
     <!-- Start: HEADER -->
@@ -38,25 +39,28 @@
             <div class="page-header">
               <h2>Mensajes</h2>
             </div>
-            <form class="form-contact-us">
+            <form action="contact_us_accion.php" class="form-contact-us" method="post">
               <div class="control-group">
+                <label>Nombre</label>
                 <div class="controls">
-                  <input type="text" id="inputName" placeholder="Nombre">
+                  <input type="text" id="nombre" placeholder="Nombre" original-title="Ingrese Nombre">
+                </div>
+              </div>
+              <div class="control-group">
+                  <label>Email</label>
+                <div class="controls">
+                  <input type="text" id="email" placeholder="Email" original-title="Ingrese Email">
+                </div>
+              </div>
+              <div class="control-group">
+                  <label>Mensaje</label>
+                <div class="controls">
+                  <textarea id="mensaje" placeholder="Mensaje" original-title="Ingrese Mensaje"></textarea>
                 </div>
               </div>
               <div class="control-group">
                 <div class="controls">
-                  <input type="text" id="inputEmail" placeholder="Email">
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="controls">
-                  <textarea id="inputMessage" placeholder="Mensaje"></textarea>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="controls">
-                  <input type="submit" class="btn btn-primary btn-large" value="Send">
+                  <input type="submit" class="btn btn-primary btn-large" onclick="return comprobar();" value="Send">
                 </div>
               </div>
             </form>
@@ -98,5 +102,36 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/boot-business.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.min.js"></script>
+    
+    <script type='text/javascript'>
+            function comprobar(){
+                var ban=0;
+                if($('#nombre').val()==''){
+                    $('#nombre').tipsy({trigger: 'manual', gravity: 'w'});
+                    $("#nombre").tipsy("show");
+                    $('#nombre').focus(function() {$("#nombre").tipsy("hide");});
+                    ban=1;
+                }
+                
+                if($('#email').val()==''){
+                    $('#email').tipsy({trigger: 'focus', gravity: 'w'});
+                    $("#email").tipsy("show");
+                    $('#email').focus(function() {$("#email").tipsy("hide");});
+                    ban=1;
+                }
+                
+                if($('#mensaje').val()==''){
+                    $('#mensaje').tipsy({trigger: 'focus', gravity: 'w'});
+                    $("#mensaje").tipsy("show");
+                    $('#mensaje').focus(function() {$("#mensaje").tipsy("hide");});
+                    ban=1;
+                }
+                if(ban==1){
+                    return false;
+                }
+                return true;
+            }
+        </script>
   </body>
 </html>
