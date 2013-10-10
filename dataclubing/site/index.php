@@ -34,7 +34,7 @@
                     <ul class="thumbnails">
                         <li class="span4">
                             <div class="thumbnail">
-                                <img src="img/placeholder-360x200.jpg" alt="product name">
+                                <img src="img/normalizacion.png" alt="product name">
                                 <div class="caption">
                                     <h3>Normalización de Datos</h3>
                                     <p>
@@ -45,7 +45,7 @@
                         </li>
                         <li class="span4">
                             <div class="thumbnail">
-                                <img src="img/placeholder-360x200.jpg" alt="product name">
+                                <img src="img/migracion.png" alt="product name">
                                 <div class="caption">
                                     <h3>Migración de Datos</h3>
                                     <p>
