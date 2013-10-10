@@ -46,7 +46,7 @@
             <div class="span3">
                 <h4>Póngase en contacto</h4>
                 <div class="social-icons-row">
-                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="https://twitter.com/DataClubing" target="_blank"><i class="icon-twitter"></i></a>
                     <a href="https://www.facebook.com/data.clubing" target="_blank"><i class="icon-facebook"></i></a>
                     <a href="#"><i class="icon-google-plus"></i></a>              
                     <a href="mailto:dataclubing@gmail.com"><i class="icon-envelope"></i></a>        
