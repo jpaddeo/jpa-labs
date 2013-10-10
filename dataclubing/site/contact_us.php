@@ -84,7 +84,7 @@
                 </div>
                 <a href="mailto:contact@bootbusiness.com" class="contact-mail">
                   <i class="icon-envelope icon-large"></i>
-                </a> info@dataclubing.com.ar
+                </a> dataclubing@gmail.com
               </div>
               <div class="clearfix"></div>
             </div>
