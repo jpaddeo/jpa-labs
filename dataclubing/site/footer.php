@@ -48,17 +48,19 @@
                                 <div class="social-icons-row">
                                     <a href="#"><i class="icon-twitter"></i></a>
                                     <a href="#"><i class="icon-facebook"></i></a>
-                                    <a href="#"><i class="icon-linkedin"></i></a>                                         
-                                </div>
-                                <div class="social-icons-row">
                                     <a href="#"><i class="icon-google-plus"></i></a>              
-                                    <a href="#"><i class="icon-github"></i></a>
                                     <a href="mailto:soundar.rathinasamy@gmail.com"><i class="icon-envelope"></i></a>        
                                 </div>
-                                <div class="social-icons-row">
-                                    <i class="icon-phone icon-large phone-number"></i> +XXXXXXXXX
-                                </div>
                             </div>      
+                            <div class="span2">
+                                <h4><i class="icon-thumbs-up icon-white"></i> Teléfonos</h4>
+                                <nav>
+                                    <ul class="quick-links">
+                                        <!--<li><a href="faq.php">Preguntas Frecuente</a></li>-->
+                                        <li><a href="contact_us.php">+XXXXXXXXX</a></li>            
+                                    </ul>
+                                </nav>
+                            </div>
                             <div class="span3">
                                 <h4>Recibir información</h4>
                                 <form>
