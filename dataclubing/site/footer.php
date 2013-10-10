@@ -1,6 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
+            <!--            
             <div class="span2">
                 <h4><i class="icon-star icon-white"></i> Productos</h4>
                 <nav>
@@ -17,16 +18,19 @@
                     </ul>
                 </nav>
             </div>
+            -->
             <div class="span2">
                 <h4><i class="icon-beaker icon-white"></i> Acerca</h4>
                 <nav>
                     <ul class="quick-links">
                         <li><a href="our_works.php">Nuestro Trabajos</a></li>
+                        <!--                        
                         <li><a href="patnerships.php">Patnerships</a></li>
                         <li><a href="leadership.php">Leadership</a></li>
                         <li><a href="news.php">oticias</a></li>
                         <li><a href="events.php">Eventos</a></li>
                         <li><a href="blog.php">Blog</a></li>
+                        -->
                         <ul>
                             </nav>          
                             </div>
@@ -34,13 +38,13 @@
                                 <h4><i class="icon-thumbs-up icon-white"></i> Soporte</h4>
                                 <nav>
                                     <ul class="quick-links">
-                                        <li><a href="faq.php">Preguntas Frecuente</a></li>
+                                        <!--<li><a href="faq.php">Preguntas Frecuente</a></li>-->
                                         <li><a href="contact_us.php">Contactame</a></li>            
                                     </ul>
                                 </nav>
                             </div>
                             <div class="span3">
-                                <h4>Get in touch</h4>
+                                <h4>Póngase en contacto</h4>
                                 <div class="social-icons-row">
                                     <a href="#"><i class="icon-twitter"></i></a>
                                     <a href="#"><i class="icon-facebook"></i></a>
@@ -52,7 +56,7 @@
                                     <a href="mailto:soundar.rathinasamy@gmail.com"><i class="icon-envelope"></i></a>        
                                 </div>
                                 <div class="social-icons-row">
-                                    <i class="icon-phone icon-large phone-number"></i> +919750227877
+                                    <i class="icon-phone icon-large phone-number"></i> +XXXXXXXXX
                                 </div>
                             </div>      
                             <div class="span3">

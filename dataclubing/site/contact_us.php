@@ -30,18 +30,18 @@
     <div class="content">
       <div class="container">
         <div class="page-header">
-          <h1>Contact us</h1>
+          <h1>Contactame</h1>
         </div>
         <div class="row-fluid">
           <!-- Start: CONTACT US FORM -->
           <div class="span4 offset1">
             <div class="page-header">
-              <h2>Quick message</h2>
+              <h2>Mensajes</h2>
             </div>
             <form class="form-contact-us">
               <div class="control-group">
                 <div class="controls">
-                  <input type="text" id="inputName" placeholder="Name">
+                  <input type="text" id="inputName" placeholder="Nombre">
                 </div>
               </div>
               <div class="control-group">
@@ -51,7 +51,7 @@
               </div>
               <div class="control-group">
                 <div class="controls">
-                  <textarea id="inputMessage" placeholder="Message"></textarea>
+                  <textarea id="inputMessage" placeholder="Mensaje"></textarea>
                 </div>
               </div>
               <div class="control-group">
@@ -65,56 +65,22 @@
           <!-- Start: OFFICES -->
           <div class="span5 offset1">
             <div class="page-header">
-              <h2>Offices</h2>
+              <h2>Oficinas</h2>
             </div>
-            <h3>North America</h3>
+            <h3>Argentina</h3>
             <div>
               <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                USA<br>
+                <strong>DataClubing</strong><br>
+                25 de Mayo s/n<br>
+                C.A.B.A. - Buenos Aires<br>
               </address>
               <div class="pull-right">
                 <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
+                  <i class="icon-phone icon-large"></i> (11) XXXXXXXXXX
                 </div>
                 <a href="mailto:contact@bootbusiness.com" class="contact-mail">
                   <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <h3>Europe</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                UK<br>
-              </address>
-              <div class="pull-right">
-                <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
-                </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <h3>Asia</h3>
-            <div>
-              <address class="pull-left">
-                <strong>Bootbusiness, Inc.</strong><br>
-                123 Folsom Ave, Suite 600<br>
-                India<br>
-              </address>
-              <div class="pull-right">
-                <div class="bottom-space">
-                  <i class="icon-phone icon-large"></i> (123) 123-1234
-                </div>
-                <a href="mailto:contact@bootbusiness.com" class="contact-mail">
-                  <i class="icon-envelope icon-large"></i>
-                </a> contact@bootbusiness.com
+                </a> info@dataclubing.com.ar
               </div>
               <div class="clearfix"></div>
             </div>

@@ -26,7 +26,7 @@
     <!-- Start: MAIN CONTENT -->
     <div class="content">
       <!-- Start: slider -->
-      <div class="slider">
+<!--      <div class="slider">
         <div class="container-fluid">
           <div id="heroSlider" class="carousel slide">
             <div class="carousel-inner">
@@ -113,12 +113,12 @@
             <a class="right carousel-control" href="#heroSlider" data-slide="next">›</a>
           </div>
         </div>
-      </div>
+      </div>-->
       <!-- End: slider -->
       <!-- Start: PRODUCT LIST -->
         <div class="container">
           <div class="page-header">
-            <h2>Our products</h2>
+            <h2>Nuestros Productos</h2>
           </div>
           <div class="row-fluid">
             <ul class="thumbnails">

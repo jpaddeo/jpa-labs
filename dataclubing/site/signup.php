@@ -30,7 +30,7 @@
     <div class="content">
       <div class="container">
         <div class="page-header">
-          <h1>Signup to Bootbusiness</h1>
+          <h1>Login en DataClubing</h1>
         </div>
         <div class="row">
           <div class="span6 offset3">
