@@ -43,19 +43,19 @@
               <div class="control-group">
                 <label>Nombre</label>
                 <div class="controls">
-                  <input type="text" id="nombre" placeholder="Nombre" original-title="Ingrese Nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" original-title="Ingrese Nombre">
                 </div>
               </div>
               <div class="control-group">
                   <label>Email</label>
                 <div class="controls">
-                  <input type="text" id="email" placeholder="Email" original-title="Ingrese Email">
+                    <input type="text" id="email" name="email" placeholder="Email" original-title="Ingrese Email">
                 </div>
               </div>
               <div class="control-group">
                   <label>Mensaje</label>
                 <div class="controls">
-                  <textarea id="mensaje" placeholder="Mensaje" original-title="Ingrese Mensaje"></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" original-title="Ingrese Mensaje"></textarea>
                 </div>
               </div>
               <div class="control-group">
