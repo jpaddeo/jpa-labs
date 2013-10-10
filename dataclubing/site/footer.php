@@ -49,7 +49,7 @@
                     <a href="#"><i class="icon-twitter"></i></a>
                     <a href="#"><i class="icon-facebook"></i></a>
                     <a href="#"><i class="icon-google-plus"></i></a>              
-                    <a href="mailto:soundar.rathinasamy@gmail.com"><i class="icon-envelope"></i></a>        
+                    <a href="mailto:dataclubing@gmail.com"><i class="icon-envelope"></i></a>        
                 </div>
             </div>      
             <div class="span2">
