@@ -1,1 +1,0 @@
-La idea de esta carpeta es ir poniendo todas las clases/componentes/etc que podrian llegar a formar parte de un framework de desarrollo web.
