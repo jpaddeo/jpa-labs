@@ -23,9 +23,41 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-footer {
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
 
 .App-link {
   color: #61dafb;
+}
+
+.App-botbutton {
+  border: 0;
+  background-color: #282c34;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App-botbutton:hover {
+  transform: scale(90%);
+}
+.App-botbutton > svg {
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  width: 36px;
+  height: 36px;
+}
+.App-botbutton > svg:hover {
+  /* -webkit-animation: spin 1s linear infinite; */
+  /* -moz-animation: spin 1s linear infinite; */
+  /* animation: spin 1s linear infinite; */
 }
 
 @keyframes App-logo-spin {
@@ -33,6 +65,23 @@
     transform: rotate(0deg);
   }
   to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }

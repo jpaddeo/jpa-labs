@@ -9,6 +9,16 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage);
   }
 
+  handleJavascriptLinks = () => {
+    const message = this.createChatBotMessage(
+      'Here you have a lot of links to learn JS',
+      {
+        widget: 'javascriptLinks',
+      }
+    );
+    this.updateChatbotState(message);
+  };
+
   updateChatbotState(message) {
     this.setState((prevState) => ({
       ...prevState,

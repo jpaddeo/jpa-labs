@@ -10,7 +10,7 @@ const LearningOptions = ({
   state,
 }) => {
   const options = [
-    { text: 'JS', handler: () => {}, id: 1 },
+    { text: 'JS', handler: actionProvider.handleJavascriptLinks, id: 1 },
     { text: 'APIs', handler: () => {}, id: 2 },
     { text: 'Security', handler: () => {}, id: 3 },
   ];

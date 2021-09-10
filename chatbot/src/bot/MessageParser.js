@@ -12,6 +12,13 @@ class MessageParser {
     ) {
       this.actionProvider.greet();
     }
+
+    if (
+      lowerCaseMessage.includes('js') ||
+      lowerCaseMessage.includes('javascript')
+    ) {
+      this.actionProvider.handleJavascriptLinks();
+    }
   }
 }
 

@@ -4,7 +4,7 @@ import LearningOptions from '../components/LearningOptions/LearningOptions';
 import LinkList from '../components/LinkList/LinkList';
 
 const config = {
-  botName: 'LearningBot',
+  botName: 'KIWI',
   initialMessages: [
     createChatBotMessage("Hi, I'm here to help. What do you want to learn?", {
       widget: 'learningOptions',
@@ -15,7 +15,7 @@ const config = {
       backgroundColor: '#376B7E',
     },
     chatButton: {
-      backgroundColor: '#376B7E',
+      backgroundColor: '#5ccc9d',
     },
   },
   widgets: [
