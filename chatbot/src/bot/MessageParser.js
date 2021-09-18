@@ -1,3 +1,4 @@
+import { handleMessage } from '../lib/messages';
 class MessageParser {
   constructor(actionProvider) {
     this.actionProvider = actionProvider;
@@ -5,20 +6,7 @@ class MessageParser {
 
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
-
-    if (
-      lowerCaseMessage.includes('hello') ||
-      lowerCaseMessage.includes('hola')
-    ) {
-      this.actionProvider.greet();
-    }
-
-    if (
-      lowerCaseMessage.includes('js') ||
-      lowerCaseMessage.includes('javascript')
-    ) {
-      this.actionProvider.handleJavascriptLinks();
-    }
+    handleMessage(lowerCaseMessage, this.actionProvider);
   }
 }
 

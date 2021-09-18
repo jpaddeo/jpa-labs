@@ -1,4 +1,5 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
+import DenunciasOptions from '../components/DenunciasOptions/DenunciasOptions';
 
 import LearningOptions from '../components/LearningOptions/LearningOptions';
 import LinkList from '../components/LinkList/LinkList';
@@ -22,6 +23,10 @@ const config = {
     {
       widgetName: 'learningOptions',
       widgetFunc: (props) => <LearningOptions {...props} />,
+    },
+    {
+      widgetName: 'denunciasOptions',
+      widgetFunc: (props) => <DenunciasOptions {...props} />,
     },
     {
       widgetName: 'javascriptLinks',

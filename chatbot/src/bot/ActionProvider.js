@@ -19,6 +19,14 @@ class ActionProvider {
     this.updateChatbotState(message);
   };
 
+  handleConsultarDenuncia = () => {
+    
+  };
+
+  handleCrearDenuncia = () => {
+
+  };
+
   updateChatbotState(message) {
     this.setState((prevState) => ({
       ...prevState,
