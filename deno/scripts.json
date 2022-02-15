@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "deno run --allow-net=pokeapi.co --allow-env=GOD_MODE --watch --allow-write=./solution.txt pokedle.ts",
+    "start": "deno run --allow-net=pokeapi.co --allow-env=GOD_MODE --allow-write=./solution.txt pokedle.ts",
+    "god": "GOD_MODE=true deno run --allow-net=pokeapi.co --allow-env=GOD_MODE --allow-write=./solution.txt pokedle.ts"
+  }
+}
